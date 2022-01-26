@@ -48,6 +48,29 @@ void *th2()
                         maximum=arr[i];
                         
 }
-
+//Albina
+int main(int argc, char *argv[])
+{
+    int count =0;
+    /*
+     seria e numrave te pasuar ne command line 
+    */
+        for (int i = 1; i < argc; i++)
+        {
+                arr[i] =  atoi(argv[i]);
+                count++;
+        }
+        n = count;
+        printf("%d command line arguement are passed \n", count);
+        for(int i=1; i<=n; i++)
+            printf("%d\t",arr[i]);
+            
+            
+        printf("\n\n");
+    int t,i;
+    //tri objektet e punes se threadave jane t1, t2, t3
+    pthread_t t1;
+    pthread_t t2;
+    pthread_t t3;
 
 
