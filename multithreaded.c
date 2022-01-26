@@ -74,3 +74,25 @@ int main(int argc, char *argv[])
     pthread_t t3;
 
 
+//Festina 
+//Krijimi i threadave
+        t=pthread_create(&t1,NULL,&th,NULL);
+        pthread_join(t1,NULL);
+    
+        t=pthread_create(&t2,NULL,&th1,NULL);
+        pthread_join(t2,NULL);
+
+        t=pthread_create(&t3,NULL,&th2,NULL);
+        pthread_join(t3,NULL);
+        
+        
+    /*main eshte thread prind,
+    threadi prind do te shfaq te dhenat
+    */
+    printf("The average value is %f",average);
+    printf("\nThe Minimum  value is %d",minimum);
+    printf("\nThe Maximum  value is %d",maximum);
+        
+return 0;
+
+}
