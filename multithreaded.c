@@ -23,3 +23,31 @@ void *th()
                 sum=sum+arr[i];
         average=sum/n; 
 }
+
+//Elira
+//thread2 per kalkulimin e vlerave minimale
+void *th1()
+{
+
+
+        minimum=arr[1];
+        for(int i=1;i<n;i++)
+                if(minimum>arr[i])
+                minimum=arr[i];
+        
+
+}
+
+//thread3 per kalkulimin e vlerave maksimale
+void *th2()
+{
+
+        maximum=arr[1];
+        for(int i=1;i<=n;i++)
+                if(maximum<arr[i])
+                        maximum=arr[i];
+                        
+}
+
+
+
